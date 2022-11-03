@@ -43,7 +43,7 @@ fs.createReadStream(`./csv/NFT Naming csv - Team ${filename}.csv`)
       
   })
   .on("end", function () {
-    console.log("finished");
+    console.log("finished generating json");
   })
   .on("error", function (error) {
     console.log(error.message);
