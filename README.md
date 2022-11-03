@@ -1,5 +1,11 @@
 # CHIP-0007
 
+## To install packages, Run
+
+```
+npm install
+```
+
 ## Start the script using the command
 ```
 node index.js
