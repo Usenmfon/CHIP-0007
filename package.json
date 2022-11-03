@@ -4,7 +4,9 @@
   "description": "generate json from csv",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/Usenmfon/CHIP-0007/issues"
   },
-  "homepage": "https://github.com/Usenmfon/CHIP-0007#readme"
+  "homepage": "https://github.com/Usenmfon/CHIP-0007#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "csv": "^6.2.1",
+    "prompt-sync": "^4.2.0"
+  }
 }
