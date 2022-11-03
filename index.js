@@ -32,10 +32,10 @@ fs.createReadStream(`./csv/NFT Naming csv - Team ${filename}.csv`)
       console.log(JSON.stringify(result));
       const stringifier = stringify({ header: true, columns: columns});
       stringifier.write({
-        "Series Number": result.series_number,
-        "Filename": result.filename,
-        "Description": result.description,
-        "Gender": result.gender,
+        "Series Number": result?.series_number,
+        "Filename": result?.filename,
+        "Description": result?.description,
+        "Gender": result?.gender,
         "Hash": result.hash
       });
       stringifier.pipe(writableStream);
