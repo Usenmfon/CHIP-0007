@@ -4,7 +4,7 @@ const { parse } = require("csv-parse");
 const { stringify } = require('csv-stringify');
 let crypto = require("crypto");
 
-let filename = prompt("Enter filename: ");
+let filename = prompt("Enter Team Name: ");
 
 let writableStream = fs.createWriteStream(`${filename}.output.csv`);
 const columns = [
