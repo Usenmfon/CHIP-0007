@@ -1,0 +1,23 @@
+{
+  "name": "chip-0007",
+  "version": "1.0.0",
+  "description": "generate json from csv",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Usenmfon/CHIP-0007.git"
+  },
+  "keywords": [
+    "node",
+    "csv"
+  ],
+  "author": "Usenmfon Uko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Usenmfon/CHIP-0007/issues"
+  },
+  "homepage": "https://github.com/Usenmfon/CHIP-0007#readme"
+}
