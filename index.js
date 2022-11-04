@@ -1,12 +1,9 @@
 const fs = require("fs");
-const prompt = require("prompt-sync")({sigint: true})
-const { parse } = require("csv-parse");
+// const { parse } = require("csv-parse");
 const { stringify } = require('csv-stringify');
 let crypto = require("crypto");
-const { EventEmitter } = require("stream");
 const csv = require('csv-parser');
 
-EventEmitter.setMaxListeners(20);
 
 let writableStream = fs.createWriteStream("teams.output.csv");
 
@@ -24,6 +21,7 @@ fs.createReadStream("./csv/HNGi9 CSV FILE - Sheet1.csv")
       let result = {
         format: "CHIP-007",
         sensitive_content: false,
+        name: row["Name"],
         description: row["Description"],
         filename: row["Filename"],
         series_number: row["Series Number"],
@@ -72,5 +70,4 @@ fs.createReadStream("./csv/HNGi9 CSV FILE - Sheet1.csv")
         "Hash": data.hash
       });
       stringifier.pipe(writableStream);
-      console.log("Finished writing data");
   }
