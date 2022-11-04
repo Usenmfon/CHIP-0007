@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "csv": "^6.2.1",
-    "prompt-sync": "^4.2.0"
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0"
   }
 }
