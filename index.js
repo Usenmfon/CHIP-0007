@@ -38,10 +38,10 @@ fs.createReadStream("./csv/HNGi9 CSV FILE - Sheet1.csv")
 
       result.attributes = [];
       for(let i = 0; i < splitStr.length; i++){
-      let value = splitStr[i].split(':');
-      let key = value[0].trim();
-      let data = value[1]?.trim();
-      result.attributes.push({"trait_type": key, value: data})
+        let value = splitStr[i].split(':');
+        let key = value[0].trim();
+        let data = value[1]?.trim();
+        result.attributes.push({"trait_type": key, value: data})
       }
 
       let generatedJson = JSON.stringify(result);
