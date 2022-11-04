@@ -8,8 +8,6 @@ const csv = require('csv-parser');
 
 EventEmitter.setMaxListeners(20);
 
-// let filename = prompt("Enter Team Name: ");
-
 let writableStream = fs.createWriteStream("teams.output.csv");
 
 const columns = [
